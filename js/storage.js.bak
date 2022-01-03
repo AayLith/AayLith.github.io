@@ -50,7 +50,7 @@ Storage.bg = {
 	load: function (bgUrl, bgid, hues) {
 		this.id = bgid;
 		if (!bgid) {
-			if (location.host === 'showdownaaylithserver.herokuapp.com') {
+			if (location.host === 'https://showdownaaylithserver.herokuapp.com/') {
 				bgid = 'shaymin';
 			} else if (location.host === Config.routes.client) {
 				bgid = ['horizon', 'ocean', 'waterfall', 'shaymin', 'charizards', 'psday'][Math.floor(Math.random() * 6)];
