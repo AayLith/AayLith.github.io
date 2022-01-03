@@ -24,12 +24,12 @@ function ThemeHeaderTemplate() {
 <?php } ?>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
-	<link rel="stylesheet" href="//AayLith.github.io/style/font-awesome.css?0.11845067541228738" />
-	<link rel="stylesheet" href="//AayLith.github.io/theme/panels.css?0.8836777887750822" />
-	<link rel="stylesheet" href="//AayLith.github.io/theme/main.css?0.9129893881394051" />
-	<link rel="stylesheet" href="//AayLith.github.io/style/battle.css?0.6181631785565134" />
-	<link rel="stylesheet" href="//AayLith.github.io/style/replay.css?0.7392599334821557" />
-	<link rel="stylesheet" href="//AayLith.github.io/style/utilichart.css?0.06848742951052089" />
+	<link rel="stylesheet" href="//AayLith.github.io/style/font-awesome.css?0.7291461594522834" />
+	<link rel="stylesheet" href="//showdownaaylithserver.herokuapp.com/theme/panels.css?0.10659089035402647" />
+	<link rel="stylesheet" href="//showdownaaylithserver.herokuapp.com/theme/main.css?0.8421227291506943" />
+	<link rel="stylesheet" href="//AayLith.github.io/style/battle.css?0.9925406215690109" />
+	<link rel="stylesheet" href="//AayLith.github.io/style/replay.css?0.5292980289131688" />
+	<link rel="stylesheet" href="//AayLith.github.io/style/utilichart.css?0.08547346874295436" />
 
 	<!-- Workarounds for IE bugs to display trees correctly. -->
 	<!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
@@ -53,11 +53,11 @@ function ThemeHeaderTemplate() {
 	<div class="pfx-topbar">
 		<div class="header">
 			<ul class="nav">
-				<li><a class="button nav-first<?php if ($panels->tab === 'home') echo ' cur'; ?>" href="//AayLith.github.io/?0.24442071577194247"><img src="//AayLith.github.io/images/pokemonshowdownbeta.png?0.49329368086607683" alt="Pok&eacute;mon Showdown! (beta)" /> Home</a></li>
-				<li><a class="button<?php if ($panels->tab === 'pokedex') echo ' cur'; ?>" href="//dex.pokemonshowdown.com/?0.6653239627060978">Pok&eacute;dex</a></li>
-				<li><a class="button<?php if ($panels->tab === 'replay') echo ' cur'; ?>" href="/?0.9327014958821076">Replays</a></li>
-				<li><a class="button<?php if ($panels->tab === 'ladder') echo ' cur'; ?>" href="//AayLith.github.io/ladder/?0.35394836871151303">Ladder</a></li>
-				<li><a class="button nav-last" href="//AayLith.github.io/forums/?0.32482515624404384">Forum</a></li>
+				<li><a class="button nav-first<?php if ($panels->tab === 'home') echo ' cur'; ?>" href="//showdownaaylithserver.herokuapp.com/?0.6006425673303584"><img src="//showdownaaylithserver.herokuapp.com/images/pokemonshowdownbeta.png?0.3554197358292819" alt="Pok&eacute;mon Showdown! (beta)" /> Home</a></li>
+				<li><a class="button<?php if ($panels->tab === 'pokedex') echo ' cur'; ?>" href="//dex.pokemonshowdown.com/?0.7519854324582425">Pok&eacute;dex</a></li>
+				<li><a class="button<?php if ($panels->tab === 'replay') echo ' cur'; ?>" href="/?0.17772480426678627">Replays</a></li>
+				<li><a class="button<?php if ($panels->tab === 'ladder') echo ' cur'; ?>" href="//showdownaaylithserver.herokuapp.com/ladder/?0.7401885169125053">Ladder</a></li>
+				<li><a class="button nav-last" href="//showdownaaylithserver.herokuapp.com/forums/?0.7684213317491759">Forum</a></li>
 			</ul>
 			<ul class="nav nav-play">
 				<li><a class="button greenbutton nav-first nav-last" href="http://play.pokemonshowdown.com/">Play</a></li>
@@ -74,10 +74,10 @@ function ThemeHeaderTemplate() {
 
 function ThemeScriptsTemplate() {
 ?>
-	<script src="//AayLith.github.io/js/lib/jquery-1.11.0.min.js?0.10289681885586144"></script>
-	<script src="//AayLith.github.io/js/lib/lodash.core.js?0.4095188535990322"></script>
-	<script src="//AayLith.github.io/js/lib/backbone.js?0.5577850324544809"></script>
-	<script src="//dex.pokemonshowdown.com/js/panels.js?0.4917919170014047"></script>
+	<script src="//AayLith.github.io/js/lib/jquery-1.11.0.min.js?0.5910605110770817"></script>
+	<script src="//AayLith.github.io/js/lib/lodash.core.js?0.27857757576574116"></script>
+	<script src="//AayLith.github.io/js/lib/backbone.js?0.3910007123042085"></script>
+	<script src="//dex.pokemonshowdown.com/js/panels.js?0.15130055227917394"></script>
 <?php
 }
 
@@ -86,21 +86,21 @@ function ThemeFooterTemplate() {
 ?>
 <?php $panels->scripts(); ?>
 
-	<script src="//AayLith.github.io/js/lib/jquery-cookie.js?0.10524259967082061"></script>
-	<script src="//AayLith.github.io/js/lib/html-sanitizer-minified.js?0.7269353703875567"></script>
-	<script src="//AayLith.github.io/js/battle-sound.js?0.08025034721205304"></script>
-	<script src="//AayLith.github.io/config/config.js?0.9812130134736718"></script>
-	<script src="//AayLith.github.io/js/battledata.js?0.7035792300707482"></script>
-	<script src="//AayLith.github.io/data/pokedex-mini.js?0.9579543741735592"></script>
-	<script src="//AayLith.github.io/data/pokedex-mini-bw.js?0.9950090346855096"></script>
-	<script src="//AayLith.github.io/data/graphics.js?0.846910217448626"></script>
-	<script src="//AayLith.github.io/data/pokedex.js?0.8522003872170398"></script>
-	<script src="//AayLith.github.io/data/items.js?0.09185100598070894"></script>
-	<script src="//AayLith.github.io/data/moves.js?0.31287582111421997"></script>
-	<script src="//AayLith.github.io/data/abilities.js?0.6936753941986007"></script>
-	<script src="//AayLith.github.io/data/teambuilder-tables.js?0.5414200327775582"></script>
-	<script src="//AayLith.github.io/js/battle-tooltips.js?0.43063739928840183"></script>
-	<script src="//AayLith.github.io/js/battle.js?0.15938160401408408"></script>
+	<script src="//AayLith.github.io/js/lib/jquery-cookie.js?0.23520284825165128"></script>
+	<script src="//AayLith.github.io/js/lib/html-sanitizer-minified.js?0.20551516770737432"></script>
+	<script src="//AayLith.github.io/js/battle-sound.js?0.53447896264241"></script>
+	<script src="//AayLith.github.io/config/config.js?0.9036133713604209"></script>
+	<script src="//AayLith.github.io/js/battledata.js?0.8832400504554365"></script>
+	<script src="//AayLith.github.io/data/pokedex-mini.js?0.8264422225156849"></script>
+	<script src="//AayLith.github.io/data/pokedex-mini-bw.js?0.10265459669284427"></script>
+	<script src="//AayLith.github.io/data/graphics.js?0.8208052050141186"></script>
+	<script src="//AayLith.github.io/data/pokedex.js?0.14422797250815989"></script>
+	<script src="//AayLith.github.io/data/items.js?0.2439368705937217"></script>
+	<script src="//AayLith.github.io/data/moves.js?0.5204129962503301"></script>
+	<script src="//AayLith.github.io/data/abilities.js?0.44836757029957197"></script>
+	<script src="//AayLith.github.io/data/teambuilder-tables.js?0.4173379676197757"></script>
+	<script src="//AayLith.github.io/js/battle-tooltips.js?0.15134444768785293"></script>
+	<script src="//AayLith.github.io/js/battle.js?0.8584365358882615"></script>
 	<script src="/js/replay.js?51e024e3"></script>
 
 </body></html>

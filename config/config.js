@@ -36,7 +36,7 @@ Config.customcolors = {
 Config.version = "0.11.2";
 
 Config.routes = {
-	root: 'AayLith.github.io',
+	root: 'showdownaaylithserver.herokuapp.com',
 	client: 'AayLith.github.io',
 	dex: 'dex.pokemonshowdown.com',
 	replays: 'replay.pokemonshowdown.com',
