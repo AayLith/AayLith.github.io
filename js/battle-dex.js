@@ -182,12 +182,12 @@ pokeballs=null;this.
 resourcePrefix=function(){var _window$document,_window$document$loca;
 var prefix='';
 if(((_window$document=window.document)==null?void 0:(_window$document$loca=_window$document.location)==null?void 0:_window$document$loca.protocol)!=='http:')prefix='https:';
-return prefix+"//"+(window.Config?Config.routes.client:'play.pokemonshowdown.com')+"/";
+return prefix+"//"+(window.Config?Config.routes.client:'')+"/";
 }();this.
 
 fxPrefix=function(){var _window$document2,_window$document2$loc;
 var protocol=((_window$document2=window.document)==null?void 0:(_window$document2$loc=_window$document2.location)==null?void 0:_window$document2$loc.protocol)!=='http:'?'https:':'';
-return protocol+"//"+(window.Config?Config.routes.client:'play.pokemonshowdown.com')+"/fx/";
+return protocol+"//"+(window.Config?Config.routes.client:'github.com/AayLith/AayLith.github.io')+"/fx/";
 }();this.
 
 loadedSpriteData={xy:1,bw:0};this.
